@@ -71,6 +71,32 @@ a
 .burger__image
 {
     margin-top: 63px;
-    margin-left: 15px;
+    
+    display: block;
 
+}
+.maincontent__text-line1
+{
+    font-family: gagalinregular;
+    font-size: 72px;
+    color:#f9b43b;
+}
+.maincontent__text-line2
+{
+    font-family: lifehackmedium;
+    font-size: 65px;
+    color:#ffffff;
+}
+.maincontent
+{
+width:900px;
+margin: 0 auto;
+display:flex;
+
+}
+.maincontent__text
+{
+    display:flex;
+    align-content: space-around;
+    flex-wrap:wrap;
 }
