@@ -1,4 +1,22 @@
 
+.header__logo
+{
+    margin-top:13px;
+}
+.nav
+{
+    margin-top:40px;
+}
+.order
+{
+    margin-top:30px;
+    
+}
+.sidebarorder_flexbox
+{
+    display:flex;
+    justify-content: space-around;
+}
 
 .сontainer__flex
 {
@@ -15,7 +33,7 @@ justify-content:space-between;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    
 }
 
 .nav__item
@@ -23,10 +41,9 @@ justify-content:space-between;
 display: inline-block;
 
 }
-/* .nav__link:last-child
-.nav__link::after
+/* .nav__link:last-child::after
 {
-content: "";    КАК УБРАТЬ ПОСЛЕДНИЙ КРУЖОК?????????????
+content:""; 
 } */
 
 .nav__link
@@ -68,13 +85,7 @@ a
     text-decoration: none;
     display:block;
 }
-.burger__image
-{
-    margin-top: 63px;
-    
-    display: block;
 
-}
 .maincontent__text-line1
 {
     font-family: gagalinregular;
@@ -89,9 +100,12 @@ a
 }
 .maincontent
 {
-width:900px;
+width:880px;
 margin: 0 auto;
 display:flex;
+}
+.maincontent__text-line1
+{
 
 }
 .maincontent__text
@@ -99,4 +113,5 @@ display:flex;
     display:flex;
     align-content: space-around;
     flex-wrap:wrap;
+    
 }
