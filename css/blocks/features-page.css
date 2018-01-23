@@ -1,0 +1,55 @@
+
+.features
+{
+    background: url('../../img/bg_page2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh; 
+    /* border: 1px solid transparent; */
+}
+.features__list
+{
+    padding:10px 10px;
+    margin: 0 auto;
+    width:960px;
+    display:flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.features__name
+{
+    font-family: 'gagalinregular';
+    font-size:72.06px;
+    text-transform: uppercase;
+  margin-top: 130px;
+  margin-bottom:50px;
+  text-align: center;
+}
+.features__item
+{
+    min-width:300px;
+    margin-right: 20px;
+    text-align: center;
+}
+.features__image
+{
+    margin-bottom: 30px;
+   
+}
+.feature__subtext
+{
+    font-family: 'lifehackmedium';
+    font-size:24.12px;
+    color:#2f3234;
+    margin-bottom: 20px;
+}
+.feature__text
+{
+    font-family:'ubuntulight';
+    font-size:14.01px;
+    color:#2f3234;
+    opacity: 0.8;
+    line-height: 24.04px;
+}
