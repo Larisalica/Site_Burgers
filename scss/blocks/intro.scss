@@ -20,23 +20,20 @@
 
 .intro
 {
-    background: url('../../img/bg/intro_bg.png');
+    background: url('../img/bg/intro_bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  
-    
 }
 
 .nav__item
 {
-display: inline-block;
-
+display: inline-flex;
 }
-/* .nav__link:last-child::after
+li:last-child:after
 {
 content:""; 
-} */
+}
 
 .nav__link
 {
@@ -45,7 +42,7 @@ content:"";
     color:#ffffff;
     text-transform: uppercase;
 }
-.nav__link::after
+.nav__item::after
 {  
 font-size: 13px;
 color: #ffffff;
@@ -57,8 +54,6 @@ padding-left: 15px;
 }
 .order
 {
-width:98px;
-height: 35px;
 background-color: #e45028;
 border-radius:3px;
 text-align: center;
@@ -81,6 +76,7 @@ a
 {
     display:flex;
     align-items: center;
+    
 }
 .container__welcome
 {
@@ -130,33 +126,3 @@ a
 
 }
 
-.pagination
-{
-display:block;
-}
-
-.points_active
-{
-    border: 0.0625rem solid #fff;
-    border-radius: 50%;
-    width:15px;
-    height:15px;
-    box-sizing: border-box;
-    position:absolute;
-}
-
-.points__item:before
-{
-   
-    color:#ffffff;
-    margin-bottom: 16px;
-    content: "•";
-    font-size: 20px;
-   position:relative;
-}
-.points__list
-{
-    top:90px;
-    right:140px;
-    position:fixed;
-}
