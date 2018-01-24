@@ -1,6 +1,6 @@
 @import url('./layout/normalize.css');
 @import url('./layout/fonts.css');
-@import url('./blocks/first-page.css');
-@import url('./blocks/features-page.css');
-@import url('./blocks/reviews-page.css');
+@import url('./blocks/intro.css');
+@import url('./blocks/features.css');
+@import url('./blocks/reviews.css');
 @import url('./blocks/style.css');

@@ -1,12 +1,15 @@
+.container__header
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .header
 {
     padding:10px 10px;
-    margin: 0 auto;
-    width:960px;
-    display:flex;
     box-sizing: border-box;
-    align-items: center;
+
 }
 .logo
 {
@@ -14,28 +17,14 @@
     margin-right: auto;
 }
 
-.sidebarorder_flexbox
-{
-    display:flex;
-    justify-content: space-around;
-}
 
-.сontainer__flex
+.intro
 {
-width:940px;
-margin:0 auto;
-display:flex;
-justify-content:space-between;
-}
-
-.first-page
-{
-    background: url('../../img/first-page_bg.png');
+    background: url('../../img/bg/intro_bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+  
     
 }
 
@@ -88,7 +77,30 @@ a
     text-decoration: none;
     display:block;
 }
+.welcome
+{
+    display:flex;
+    align-items: center;
+}
+.container__welcome
+{
+    display:flex;
+    align-items: center;
+}
+.content__column
+{
+    flex:1;
+}
 
+/* .content__text
+{
+    margin-top: 120px;
+} */
+.content__text
+{
+    margin:0;
+    align-items: center;
+}
 .content__text-line1
 {
     font-family: gagalinregular;
@@ -101,29 +113,23 @@ a
     font-size: 65px;
     color:#ffffff;
 }
-.content__first-page
-{
-width:880px;
-margin: 0 auto;
-display:flex;
 
 
-}
 
-.maincontent__text
-{
-    margin-top:120px;
-    
-}
 .burger__image
 {
     display: block;
-    margin-right: 10px;
 }
-ul
+
+
+.intro__arrow
 {
-    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    margin-top: 90px;
+
 }
+
 .pagination
 {
 display:block;

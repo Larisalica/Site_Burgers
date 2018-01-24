@@ -1,0 +1,67 @@
+.reviews__item
+{
+
+width:25%;
+height: 50%;
+}
+.reviews-list
+{
+    display:flex;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+.reviews__item
+{
+
+ position:relative;
+ flex-direction: column;
+}
+
+.reviews__item:hover 
+.reviews__desc
+{
+   visibility: visible; 
+}
+.reviews__photo
+{
+width:100%;
+height: 100%;
+}
+.reviews__desc
+{
+    visibility: hidden;
+    position:absolute;
+    top:50px;
+    left:25px;
+}
+.reviews__sub
+{
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    color:#ffffff;
+
+}
+.reviews__link
+{
+    color:#ffffff;
+    text-transform: uppercase;
+    width:100px;
+    height:35px;
+    background-color: #2f3234;
+    border-radius:5px;
+    font-family: 'ubuntumedium';
+    font-size:13px;
+    text-align: center;
+    padding: 11px 12px;
+    box-sizing: border-box;
+}
+.reviews__text
+{
+font-family: 'ubuntulight';
+font-size:14px;
+line-height: 24px;
+color:#ffffff;
+height:135px;
+width: 240px;
+}

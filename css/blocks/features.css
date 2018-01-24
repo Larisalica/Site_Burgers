@@ -1,12 +1,13 @@
 
+
 .features
 {
-    background: url('../../img/bg_page2.png');
-    background-position: center;
+    background: url('../../img/bg/features_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh; 
+    display:flex;
+    align-items: center;
+  
     /* border: 1px solid transparent; */
 }
 .features__list
@@ -23,9 +24,9 @@
     font-family: 'gagalinregular';
     font-size:72.06px;
     text-transform: uppercase;
-  margin-top: 130px;
-  margin-bottom:50px;
-  text-align: center;
+    margin: 0;
+    margin-bottom:50px;
+    text-align: center;
 }
 .features__item
 {

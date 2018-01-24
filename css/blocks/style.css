@@ -1,0 +1,19 @@
+
+
+ul, li
+{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+.section
+{
+min-height: 650px;
+height:100vh;
+}
+.container
+{
+    margin: 0 auto;
+    width:940px;
+}
