@@ -17,3 +17,42 @@
     align-items: center;
     justify-content: center;
 }
+.team__name
+{
+    font-family:'gagalinregular';
+    font-size:72px;
+    color:#f9b43b;
+}
+
+.team__accordeon-name
+{
+    margin-bottom:16px;
+    font-family:'gagalinregular';
+    font-size:14px;
+    color:#ffffff;
+}
+.team__accordeon-content
+{
+display:flex;
+
+}
+
+.team__accordeon-ava
+{
+border-radius: 50%;
+width:100px;
+height: 100px;
+}
+.team__accordeon-title
+{
+    font-family: 'ubuntubold';
+    font-size:14px;
+    color:#ffffff;
+}
+.team__accordeon-description
+{
+    font-family: 'ubuntulight';
+    font-size:14px;
+    line-height: 24px;
+    color:#ffffff;
+}

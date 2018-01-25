@@ -3,14 +3,14 @@
 @font-face {
   font-family: 'lifehackmedium';
   src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gagalinregular';
   src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -31,7 +31,7 @@
 @font-face {
   font-family: 'ubuntumedium';
   src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
   font-display: optional;
 }
@@ -39,7 +39,7 @@
 @font-face {
   font-family: 'ubunturegular';
   src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -72,7 +72,7 @@ ul, li {
   /* border: 1px solid transparent; */
 }
 
-.features__list {
+.features-list {
   padding: 10px 10px;
   margin: 0 auto;
   width: 960px;
@@ -268,11 +268,18 @@ a {
 }
 
 .pagination__item:before {
-  color: #ffffff;
-  margin-bottom: 10px;
-  content: "•";
-  font-size: 20px;
-  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
 }
 
 .pagination__list {
@@ -287,6 +294,7 @@ a {
   width: 15px;
   height: 15px;
   position: relative;
+  margin-bottom: 14px;
 }
 
 .reviews__item {
@@ -387,6 +395,44 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.team__name {
+  font-family: 'gagalinregular';
+  font-size: 72px;
+  color: #f9b43b;
+}
+
+.team__accordeon-name {
+  margin-bottom: 16px;
+  font-family: 'gagalinregular';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.team__accordeon-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__accordeon-ava {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.team__accordeon-title {
+  font-family: 'ubuntubold';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.team__accordeon-description {
+  font-family: 'ubuntulight';
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=base.css.map */
