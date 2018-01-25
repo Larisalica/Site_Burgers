@@ -284,6 +284,9 @@ a {
 
 .pagination__item {
   display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
 }
 
 .reviews__item {
@@ -359,6 +362,31 @@ a {
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 15px;
+}
+
+.team {
+  background: url("../img/bg/team_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*# sourceMappingURL=base.css.map */
