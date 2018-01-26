@@ -6,6 +6,9 @@
 // @import url('./blocks/reviews.scss');
 // @import url('./blocks/pagination.scss');
 
+$yellow: #f9b43b;
+$orange:#e45028;
+$black: #111111;
 
 @import "layout/fonts.scss";
 @import "layout/style.scss";
@@ -14,4 +17,7 @@
 @import "blocks/pagination.scss";
 @import "blocks/reviews.scss";
 @import "blocks/team.scss";
+@import "blocks/menu.scss";
+@import "blocks/map.scss";
+@import "sprite/sprite.scss";
 

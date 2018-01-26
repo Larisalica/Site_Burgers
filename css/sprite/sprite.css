@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+
+.icon:hover {
+  fill: blue;
+}
+
+.icon:first-child {
+  margin-left: 0px;
+}

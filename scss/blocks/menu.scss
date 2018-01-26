@@ -1,0 +1,53 @@
+.menu
+{
+    background: url('../img/bg/menu_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+.menu__name
+{
+    position:absolute;
+    top:109px;
+    left:96px;
+    color:white;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+}
+.menu__container
+{
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+width:80%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.menu__accordeon
+{
+display:flex; 
+}
+
+.menu__accordeon-item
+{
+display:flex;
+
+
+}
+
+.menu__accordeon-name
+{
+    color:white;
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    transform: rotate(-90deg);
+
+
+}
+.menu__accordeon-description
+{
+
+}
