@@ -9,6 +9,7 @@
 $yellow: #f9b43b;
 $orange:#e45028;
 $black: #111111;
+$grey:#595959;
 
 @import "layout/fonts.scss";
 @import "layout/style.scss";
@@ -19,5 +20,6 @@ $black: #111111;
 @import "blocks/team.scss";
 @import "blocks/menu.scss";
 @import "blocks/map.scss";
-@import "sprite/sprite.scss";
+@import "blocks/footer.scss";
+@import "blocks/order.scss";
 

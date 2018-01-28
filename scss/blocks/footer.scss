@@ -1,0 +1,53 @@
+.footer
+{
+    background: $black;
+    position: relative;
+    width:100%;
+    padding:10px 0;
+
+}
+
+.footer__container
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__desc-adress
+{
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    color:white
+}
+.footer__desc-number
+{
+    font-family: 'ubuntubold';
+    font-size: 14px;
+    color: $orange;
+}
+
+.icon
+{
+ 
+    margin-left: 10px;
+    fill:$grey;
+    width:25px;
+    height:25px;
+    &:hover
+    {
+        fill:white;
+    }
+    &:first-child
+    {
+        margin-left:0px;
+    }
+}
+.icon-active
+{
+    fill:white;
+}
+.footer__social
+{
+    display:flex;
+    align-items: center;
+}
