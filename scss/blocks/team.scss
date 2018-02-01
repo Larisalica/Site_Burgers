@@ -16,10 +16,20 @@
     display:flex;
     align-items: center;
     justify-content: center;
+
+        @include phone {
+        width:100%;
+        }
 }
 .team__content
 {
     width:70%;
+    @include phone {
+    
+        width:100%;
+    
+text-align: center;
+        }
 }
 .team__name
 {
@@ -29,17 +39,32 @@
     text-transform: uppercase;
 }
 
+.team__accordeon {
+
+ 
+}
+.team__accordeon-item
+{
+    text-align: center;
+}
 
 .team__accordeon-item--active
 {
     .team__accordeon-content
     {
     height: auto;
+
+    @include phone {
+       display:flex;
+       flex-direction: column;
+        }
     }
+
+
     .team__accordeon-name
     {
    color: $yellow;
-   margin-bottom: 16px;
+   margin-bottom: rem(16);
    display: flex;
     
         &:before
@@ -60,7 +85,7 @@ overflow:hidden;
 
 .team__accordeon-name
 {
-    margin-bottom:37px;
+    margin-bottom:rem(37);
     font-family:'gagalinregular';
     font-size:14px;
     color:#ffffff;
@@ -84,6 +109,9 @@ overflow:hidden;
 {
     margin-right:20px;
     margin-bottom:40px;
+    @include phone {
+        margin-bottom:17px;
+        }
 }
 
 
@@ -100,6 +128,10 @@ overflow: hidden;
     font-size:14px;
     color:#ffffff;
     margin-bottom:20px;
+
+    @include phone {
+        margin-bottom:20px;
+        }
 }
 .team__accordeon-description
 {
@@ -108,4 +140,7 @@ overflow: hidden;
     line-height: 24px;
     color:#ffffff;
     width:65%;
+    @include phone {
+        margin-bottom:30px;
+        }
 }

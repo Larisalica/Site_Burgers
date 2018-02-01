@@ -31,11 +31,12 @@ justify-content: center;
 display:flex; 
 }
 
-.menu__accordeon-item
+.menu__accordeon-item--active
 {
-display:flex;
-
-
+    .menu__accordeon-description
+    {
+       width: auto;
+    }
 }
 
 .menu__accordeon-name
@@ -46,8 +47,11 @@ display:flex;
     transform: rotate(-90deg);
 
 
+
 }
 .menu__accordeon-description
 {
-
+    width:0;
+    display:flex;
+    overflow:hidden;
 }

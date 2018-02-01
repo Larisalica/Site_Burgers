@@ -18,6 +18,11 @@
     display:flex;
     box-sizing: border-box;
     align-items: center;
+
+        @include phone {
+            flex-direction: column; 
+        }
+   
 }
 .features__name
 {
@@ -27,17 +32,33 @@
     margin: 0;
     margin-bottom:50px;
     text-align: center;
+    @include phone {
+        margin-bottom:40px;
+               }
+
 }
 .features__item
 {
-    min-width:300px;
+    flex:3;
     margin-right: 20px;
     text-align: center;
+    @include phone {
+    display:flex;
+    text-align: left;
+    }
+
 }
 .features__image
 {
     margin-bottom: 30px;
    
+}
+.features__alltext
+{
+    @include phone {
+ flex-direction:row;
+
+        }
 }
 .feature__subtext
 {

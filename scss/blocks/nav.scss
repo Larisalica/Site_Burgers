@@ -1,0 +1,75 @@
+.nav
+{
+display: flex;
+align-items: center;
+@include phone {
+    display:none;
+}
+}
+
+
+.nav__item
+{
+display: inline-flex;
+}
+li:last-child:after
+{
+content:""; 
+}
+
+.nav__link
+{
+    font-family: 'ubuntumedium';
+    font-size: rem(13);
+    color:#ffffff;
+    text-transform: uppercase;
+}
+.nav__item::after
+{  
+font-size: rem(13);
+color: #ffffff;
+content: "●";
+padding-right: rem(15);
+padding-left: rem(15);
+}
+
+  
+.btn
+{
+background-color: #e45028;
+border-radius:rem(3);
+text-align: center;
+padding:10px 15px;
+box-sizing: border-box;
+text-transform: uppercase;
+display:inline-flex;
+}
+.btn__link
+{
+    font-family: 'ubuntumedium';
+    font-size: rem(13);
+    color:#ffffff;
+}
+
+.hamburger
+{
+    display:none;
+    @include phone {
+        display:inline-block;
+    }
+}
+.hamburger__link
+{
+    @include phone {
+        width:rem(24);
+    } 
+}
+.hamburger__item, .hamburger__item:after, .hamburger__item:before
+{
+    @include phone {
+    width:100%;
+    height:rem(3);
+    border-radius:rem(2);
+    background-color: white;
+    }
+}

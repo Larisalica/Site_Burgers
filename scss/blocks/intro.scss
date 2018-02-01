@@ -24,54 +24,7 @@
     margin-right: auto;
 }
 
-.nav
-{
-display: flex;
-align-items: center;
-}
 
-
-.nav__item
-{
-display: inline-flex;
-}
-li:last-child:after
-{
-content:""; 
-}
-
-.nav__link
-{
-    font-family: 'ubuntumedium';
-    font-size: 13px;
-    color:#ffffff;
-    text-transform: uppercase;
-}
-.nav__item::after
-{  
-font-size: 13px;
-color: #ffffff;
-content: "●";
-padding-right: 15px;
-padding-left: 15px;
-}
-
-  
-.btn
-{
-background-color: #e45028;
-border-radius:3px;
-text-align: center;
-padding:10px 15px;
-box-sizing: border-box;
-text-transform: uppercase;
-}
-.btn__link
-{
-    font-family: 'ubuntumedium';
-    font-size: 13px;
-    color:#ffffff;
-}
 a
 {
     text-decoration: none;
@@ -87,40 +40,59 @@ a
 {
     display:flex;
     align-items: center;
+    @include phone {
+      flex-direction:column;
+    }
 }
 .content__column
 {
     flex:1;
+    @include phone {
+        text-align: center;
+        }
 }
 
 /* .content__text
 {
     margin-top: 120px;
 } */
-.content__text
-{
-    margin:0;
-    align-items: center;
-}
-.content__text-line1
-{
-    font-family: gagalinregular;
-    font-size: 72px;
-    color:#f9b43b;
-}
-.content__text-line2
-{
-    font-family: lifehackmedium;
-    font-size: 65px;
-    color:#ffffff;
-}
 
 
 
 .burger__image
 {
     display: block;
+    @include phone {
+    margin-bottom: 50px;
+    }
 }
+
+.content__text
+{
+    margin:0;
+    align-items: center;
+  
+}
+.content__text-line1
+{
+    font-family: gagalinregular;
+    font-size: 72px;
+    color:#f9b43b;
+    @include phone {
+    display:block;
+    }
+}
+.content__text-line2
+{
+    font-family: lifehackmedium;
+    font-size: 65px;
+    color:#ffffff;
+    @include phone {
+    display:block;
+    }
+}
+
+
 
 
 .intro__arrow
@@ -128,6 +100,10 @@ a
     display:flex;
     justify-content: center;
     margin-top: 90px;
+    @include phone {
+        margin-top: 67px;
+        }
+
 
 }
 

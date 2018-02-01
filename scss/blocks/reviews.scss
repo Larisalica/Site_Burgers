@@ -13,6 +13,10 @@
 width:25%;
 height: 50%;
 position:relative;
+@include phone {
+    width:50%;
+  
+    }
 }
 
 
@@ -49,13 +53,17 @@ height: 100%;
     color:#ffffff;
     margin-bottom:27px;
 
+        @include phone {
+            font-size: 24px;
+            line-height: 28px;
+    }
+   
+
 }
 .reviews__link
 {
     color:#ffffff;
     text-transform: uppercase;
-    width:100px;
-    height:35px;
     background-color: #2f3234;
     border-radius:5px;
     font-family: 'ubuntumedium';
@@ -63,8 +71,15 @@ height: 100%;
     text-align: center;
     padding: 11px 12px;
 
-    
+
 }
+.reviews__link-dekstop
+{
+@include phone {
+    display:none;
+}
+}
+
 .reviews__text
 {
 font-family: 'ubuntulight';
@@ -73,4 +88,7 @@ line-height: 24px;
 color:#ffffff;
 margin-bottom:15px;
 
+    @include phone {
+    display:none;
+}
 }

@@ -17,8 +17,8 @@ color:$black;
 .wrapper
 {
     position:relative;
-    widows: 100%;
-    min-width: 940+20px;
+    width: 100%;
+    min-width: rem(940+20);
     min-height: 100%;
     overflow: hidden;
 }
@@ -54,13 +54,17 @@ ul, li
 }
 .section
 {
-min-height: 650px;
+min-height: rem(650);
 height:100vh;
 }
 .container
 {
     margin: 0 auto;
-    width:940px;
+    width:rem(940);
+    @include phone
+    {
+        width:95%;
+    } 
 }
 
 *
