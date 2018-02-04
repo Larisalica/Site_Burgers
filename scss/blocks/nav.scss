@@ -39,7 +39,7 @@ padding-left: rem(15);
 background-color: #e45028;
 border-radius:rem(3);
 text-align: center;
-padding:10px 15px;
+padding:rem(10) rem(15);
 box-sizing: border-box;
 text-transform: uppercase;
 display:inline-flex;
@@ -64,7 +64,7 @@ display:inline-flex;
         width:rem(24);
     } 
 }
-.hamburger__item, .hamburger__item:after, .hamburger__item:before
+.hamburger__item
 {
     @include phone {
     width:100%;

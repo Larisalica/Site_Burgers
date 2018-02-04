@@ -24,11 +24,9 @@
 .team__content
 {
     width:70%;
-    @include phone {
-    
+         @include phone {
         width:100%;
-    
-text-align: center;
+        text-align: center;
         }
 }
 .team__name

@@ -4,6 +4,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
+    display:flex;
+    justify-content: flex-end;
+
 }
 .menu__name
 {
@@ -23,21 +26,22 @@ bottom:0;
 width:80%;
 display:flex;
 align-items: center;
-justify-content: center;
+
 }
 
 .menu__accordeon
 {
 display:flex; 
+
 }
 
-.menu__accordeon-item--active
-{
-    .menu__accordeon-description
-    {
-       width: auto;
-    }
-}
+// .menu__accordeon-item--active
+// {
+//     .menu__accordeon-description
+//     {
+//        width: auto;
+//     }
+// }
 
 .menu__accordeon-name
 {
@@ -45,6 +49,10 @@ display:flex;
     font-family: 'gagalinregular';
     font-size: 40px;
     transform: rotate(-90deg);
+    width: rem(80);
+    height: 100%;
+    position: relative;
+
 
 
 
@@ -54,4 +62,12 @@ display:flex;
     width:0;
     display:flex;
     overflow:hidden;
+}
+
+.menu__accordeon-meat
+{
+    background-image: url('../img/bg/dieta_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
