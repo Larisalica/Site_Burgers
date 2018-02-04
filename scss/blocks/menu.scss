@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
 
 }
@@ -16,58 +16,90 @@
     color:white;
     font-family: 'gagalinregular';
     font-size: 72px;
+  
 }
-.menu__container
-{
-position:absolute;
-top:0;
-right:0;
-bottom:0;
-width:80%;
-display:flex;
-align-items: center;
 
-}
 
 .menu__accordeon
 {
 display:flex; 
-
+background-color: #4c4e50;
+opacity:0.9;
+z-index: 10;
 }
 
-// .menu__accordeon-item--active
-// {
-//     .menu__accordeon-description
-//     {
-//        width: auto;
-//     }
-// }
-
-.menu__accordeon-name
+.menu__accordeon-item
 {
-    color:white;
-    font-family: 'gagalinregular';
-    font-size: 40px;
-    transform: rotate(-90deg);
+    display:flex;
+    z-index: 20;
+}
+.menu__accordeon-wrap
+{
     width: rem(80);
     height: 100%;
     position: relative;
-
-
-
-
-}
-.menu__accordeon-description
-{
-    width:0;
-    display:flex;
-    overflow:hidden;
+    
 }
 
 .menu__accordeon-meat
 {
-    background-image: url('../img/bg/dieta_bg.jpg');
+    background-image: url('../img/bg/meat_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.menu__accordeon-veg
+{
+    background-image: url('../img/bg/veg_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.menu__accordeon-diet
+{
+    background-image: url('../img/bg/dieta_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.menu__accordeon-name
+{
+    font-family: 'gagalinregular';
+    font-weight: 300;
+    font-size: rem(40);
+    line-height: rem(64.36);
+    color:#ffff;
+    margin: 0;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 178px;
+    right: -125px;
+    width: 345px;
+    height: 52px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+        &:hover
+    {
+        color: hsl(38, 94%, 60%);
+        transition-duration: 0.4s
+    }
+}
+.menu__accordeon-description
+{
+    font-family: 'ubuntulight';
+    font-size: rem(14);
+    line-height: rem(24);
+    color:#ffff;
+    width:0;
+    overflow:hidden;  
+    display:flex;
+}
+.menu__accordeon-item--active
+{
+    .menu__accordeon-description
+    {
+       width: rem(476);
+       padding: rem(60) rem(46);
+      
+    }
 }
