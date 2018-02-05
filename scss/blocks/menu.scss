@@ -80,7 +80,7 @@ z-index: 10;
     transition-duration: 0.4s;
         &:hover
     {
-        color: hsl(38, 94%, 60%);
+        color: $yellow;
         transition-duration: 0.4s
     }
 }

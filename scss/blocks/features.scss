@@ -15,7 +15,6 @@
     padding:10px 10px;
     margin: 0 auto;
     width:960px;
-    display:flex;
     box-sizing: border-box;
     align-items: center;
 
@@ -41,30 +40,30 @@
 {
     flex:3;
     text-align: center;
-    @include phone {
+        @include phone {
     display:flex;
     text-align: left;
+    margin-bottom: 50px;
     }
 
 }
 .features__image
 {
     margin-bottom: 30px;
+    @include phone {
+        margin-right: 24px;
+        }
    
 }
-.features__alltext
-{
-    @include phone {
- flex-direction:row;
 
-        }
-}
 .feature__subtext
 {
     font-family: 'lifehackmedium';
     font-size:24.12px;
     color:#2f3234;
     margin-bottom: 20px;
+   
+
 }
 .feature__text
 {
@@ -73,4 +72,5 @@
     color:#2f3234;
     opacity: 0.8;
     line-height: 24.04px;
+ 
 }

@@ -17,6 +17,7 @@ li:last-child:after
 content:""; 
 }
 
+
 .nav__link
 {
     font-family: 'ubuntumedium';
@@ -32,7 +33,10 @@ content: "●";
 padding-right: rem(15);
 padding-left: rem(15);
 }
+.nav-list_active
+{
 
+}
   
 .btn
 {
@@ -54,16 +58,17 @@ display:inline-flex;
 .hamburger
 {
     display:none;
+  
+  
     @include phone {
         display:inline-block;
+        width: 24px;
+        margin-right: rem(15);
+        margin-left: rem(15);
+     
     }
 }
-.hamburger__link
-{
-    @include phone {
-        width:rem(24);
-    } 
-}
+
 .hamburger__item
 {
     @include phone {
@@ -71,5 +76,6 @@ display:inline-flex;
     height:rem(3);
     border-radius:rem(2);
     background-color: white;
+    display:inline-block;
     }
 }

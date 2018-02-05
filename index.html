@@ -7,6 +7,22 @@
     <title>Burger</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/base.css">
+    <style>
+        .nav-list_active
+        {
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity:0.8;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -18,7 +34,7 @@
                         <img src="img/icons/logo.svg" alt="На главную страницу" class="logo__image">
                     </a>
                     <nav class="nav"> 
-                        <ul class="nav-list">
+                        <ul id="nav-list" class="nav-list">
                             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                             <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
                             <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
@@ -31,7 +47,7 @@
                         <a href="#" class="btn__link">Заказать</a>
                     </div>  
                     <div class="hamburger">
-                        <a href="#"class "hamburger__link">
+                        <a href="#"class "hamburger__link" id="hamburger__link">
                             <span class="hamburger__item"></span>
                             <span class="hamburger__item"></span>
                             <span class="hamburger__item"></span>
@@ -387,6 +403,6 @@
  
 
 
-    
+ <script src="./js/base.js"></script>
 </body>
 </html>

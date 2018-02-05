@@ -81,7 +81,10 @@ overflow:hidden;
     color:#ffffff;
     display: flex;
     line-height: 2.008;
-      
+    @include phone {
+        align-items: center;
+        justify-content: center;
+         }
 
     &:before
     {
@@ -129,7 +132,6 @@ overflow: hidden;
     font-size:14px;
     line-height: 24px;
     color:#ffffff;
-    width:65%;
     @include phone {
         margin-bottom:30px;
         }

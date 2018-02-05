@@ -1,6 +1,9 @@
 .pagination
 {
 display:block;
+@include phone {
+    display:none;
+}
 }
 
 .pagination_active
