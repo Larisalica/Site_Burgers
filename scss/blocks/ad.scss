@@ -5,7 +5,7 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
     
 
 }
-.content__ad
+.container__ad
 {
     position:absolute;
     left:50%;
@@ -16,10 +16,12 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
         flex-direction:column;
       }
 }
-// .ad__content
-// {
-//     display:flex;
-// }
+.ad__content
+{
+    display:flex;
+    position: relative;
+  
+}
 .adcontent__column
 {
     flex:1;
@@ -32,6 +34,7 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
     display: block;
     height: 100%;
     width:100%;
+    padding-right: rem(20);
 
     @include phone {
     margin-bottom: rem(40);
@@ -70,16 +73,20 @@ margin-bottom: rem(30);
     color: $orange;
     margin-right: rem(30);
 }
-.ad__comp
-{
-    position:absolute;
-    top:rem(90);
-    left:rem(80);
+
+.ad__img1
+ {
+position:absolute; 
+width:rem(88);
+height:rem(88);
+bottom:100%;
 }
 
-.ad__1
+
+.ad__img2
 {
-    position:absolute;
-    left:rem(80);
-    top:rem(485);
+position:absolute;
+width: rem(60);
+height:rem(83);
+top:100%;
 }
