@@ -6,7 +6,7 @@ html, body
 body
 {
 font-size:14px;
-// line-height: 1.42px;
+// line-height: rem(1.42);
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 position:relative;
@@ -22,6 +22,13 @@ color:$black;
     min-height: 100%;
     overflow: hidden;
     min-height: inherit;
+    @include phone {
+        min-width: inherit;
+    }
+    @include tablet {
+        min-width: inherit;
+    }
+    
 }
 
 table

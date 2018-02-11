@@ -1,0 +1,85 @@
+.ad
+{
+position: relative;
+background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
+    
+
+}
+.content__ad
+{
+    position:absolute;
+    left:50%;
+    top:50%;
+    display:flex;
+    transform: translate(-50%, -50%);
+        @include phone {
+        flex-direction:column;
+      }
+}
+// .ad__content
+// {
+//     display:flex;
+// }
+.adcontent__column
+{
+    flex:1;
+}
+
+
+
+.adburger__image
+{
+    display: block;
+    height: 100%;
+    width:100%;
+
+    @include phone {
+    margin-bottom: rem(40);
+}
+}
+
+.ad__title
+{
+    font-family: 'gagalinregular';
+    font-size: rem(72);
+    line-height: rem(64);
+    color:white;
+    margin-bottom: rem(46);
+
+}
+
+.ad__desc
+{
+font-family: 'ubuntulight';
+font-size:rem(14);
+color:white;
+margin-bottom: rem(30);
+}
+
+ .ad__prices{
+
+    font-family:'gagalinregular';
+    font-size:rem(72);
+    color: $orange;
+    margin-right: rem(10);
+}
+.ad__prices2
+{
+    font-family:'gagalinregular';
+    font-size:rem(30);
+    color: $orange;
+    margin-right: rem(30);
+}
+.ad__comp
+{
+    position:absolute;
+    top:rem(90);
+    left:rem(80);
+}
+
+.ad__1
+{
+    position:absolute;
+    left:rem(80);
+    top:rem(485);
+}

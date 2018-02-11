@@ -4,6 +4,9 @@ display:block;
 @include phone {
     display:none;
 }
+@include tablet {
+    display:none;
+}
 }
 
 .pagination_active

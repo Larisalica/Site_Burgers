@@ -6,23 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burger</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/base.css">
-    <style>
-        .nav-list_active
-        {
-    display:flex;
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color:black;
-    opacity:0.8;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -33,8 +20,8 @@
                     <a href="#" class="logo">
                         <img src="img/icons/logo.svg" alt="На главную страницу" class="logo__image">
                     </a>
-                    <nav class="nav"> 
-                        <ul id="nav-list" class="nav-list">
+                    <nav id="nav" class="nav"> 
+                        <ul id="nav-list"class="nav-list">
                             <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
                             <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
                             <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
@@ -43,10 +30,8 @@
                             <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>         
                          </ul>        
                     </nav> 
-                    <div class="btn">
-                        <a href="#" class="btn__link">Заказать</a>
-                    </div>  
-                    <div class="hamburger">
+                    <input type="submit"class="button" value="Заказать"> 
+                    <div id="hamburger" class="hamburger">
                         <a href="#"class "hamburger__link" id="hamburger__link">
                             <span class="hamburger__item"></span>
                             <span class="hamburger__item"></span>
@@ -102,6 +87,103 @@
         </ul>
         </div>
     </section>
+                                                <!-- СЕКЦИЯ "РЕКЛАМА" -->
+    <section class="section ad">
+        <div class="owl-carousel">
+            <div class="container content__ad">                   
+                <div class="adcontent__column">
+                    <img src="img/ad/burger_ad1.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                </div>
+                <div class="adcontent__column ">
+                    <div class="adcontent__text">
+                        <h1 class="ad__title">Dark Beef Burger</h1>
+                        <div class="ad__desc">
+                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                         луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                        </div>
+                        <span class="ad__prices">500</span>
+                        <span class="ad__prices2">рублей</span>
+                        <input type="submit"class="button" value="Заказать">
+                    </div>
+                </div>
+            </div>
+                 
+            <div class="container content__ad">   
+                <div class="adcontent__column">
+                    <img src="img/ad/Burger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                </div>
+                <div class="adcontent__column ">
+                    <div class="adcontent__text">
+                        <h1 class="ad__title">Dark Beef Burger</h1>
+                        <div class="ad__desc">
+                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                         луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                        </div>
+                        <span class="ad__prices">500</span>
+                        <span class="ad__prices2">рублей</span>
+                        <input type="submit"class="button" value="Заказать">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="ad__content">
+            <div class="adcontent__column">
+                <img src="img/ad/Cheeseburger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+            </div>
+            <div class="adcontent__column ">
+                <div class="adcontent__text">
+                    <h1 class="ad__title">Dark Beef Burger</h1>
+                    <div class="ad__desc">
+                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                             луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                    </div>
+                    <span class="ad__prices">500</span>
+                    <span class="ad__prices2">рублей</span>
+                    <input type="submit"class="button" value="Заказать">
+                </div>
+            </div>
+       
+    </div>    
+  
+    <div class="ad__content">
+            <div class="adcontent__column">
+                <img src="img/ad/chiken burger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+            </div>
+            <div class="adcontent__column ">
+                <div class="adcontent__text">
+                    <h1 class="ad__title">Dark Beef Burger</h1>
+                    <div class="ad__desc">
+                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                             луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                    </div>
+                    <span class="ad__prices">500</span>
+                    <span class="ad__prices2">рублей</span>
+                    <input type="submit"class="button" value="Заказать">
+                </div>
+            </div>
+    
+        </div>
+        <div class="ad__content">
+            <div class="adcontent__column">
+                    <img src="img/ad/burger_sandwich.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                </div>
+                <div class="adcontent__column ">
+                    <div class="adcontent__text">
+                         <h1 class="ad__title">Dark Beef Burger</h1>
+                        <div class="ad__desc">
+                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                 луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                        </div>
+                        <span class="ad__prices">500</span>
+                        <span class="ad__prices2">рублей</span>
+                        <input type="submit"class="button" value="Заказать">
+                    </div>
+                </div>
+           
+        </div>  -->
+   
                                                 <!-- СЕКЦИЯ "КОМАНДА" -->
 
     <section class="section team">
@@ -349,9 +431,7 @@
                         <span class="form__title">Не перезванивать</span>
                     </label>
                 </div>
-                <div class="btn">
-                    <a href="#" class="btn__link">Заказать</a>
-                </div> 
+                <input type="submit"class="button" value="Заказать">
             </div>  
         </form>
     </div>
@@ -401,8 +481,19 @@
 </div>
 
  
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="./js/owlcarousel/owl.carousel.min.js"></script>
 
-
+<script>
+ $("form").on("submit", function (e)
+{
+e.preventDefault ();
+console.log ("form submit")
+})
+</script>
  <script src="./js/base.js"></script>
 </body>
 </html>

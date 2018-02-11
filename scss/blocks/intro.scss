@@ -47,10 +47,6 @@ a
         }
 }
 
- .content__text
-{
-    width:rem(360);
-} 
 
 
 
@@ -67,7 +63,6 @@ a
 .content__text
 {
     margin:0;
-    align-items: center;
   
 }
 .content__text-line1
@@ -78,7 +73,6 @@ a
         @include phone {
         display:block;
         font-size: rem(63);
-
     }
 }
 .content__text-line2
