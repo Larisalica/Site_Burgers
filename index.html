@@ -222,7 +222,7 @@
             <div class="team__content">
                 <h1 class="team__name">Команда</h1>
                 <ul class="team__accordeon">
-                    <li class="team__accordeon-item">
+                    <li class="team__accordeon-item team__accordeon--active">
                         <a href="#" class="team__accordeon-name">Дэниэл Редклиф</a>
                         <div class="team__accordeon-content">
                             <div class="team__accordeon-photo">
@@ -236,7 +236,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team__accordeon-item team__accordeon-item--active">
+                    <li class="team__accordeon-item">
                             <a href="#" class="team__accordeon-name">Ричард Джеймс</a>
                             <div class="team__accordeon-content">
                                 <div class="team__accordeon-photo">
@@ -516,15 +516,21 @@
   src="http://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='/js/jquery-1.6.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
 <script src="./js/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- <script>
+<script>
  $("form").on("submit", function (e)
 {
 e.preventDefault ();
 console.log ("form submit")
 })
-</script> -->
+</script>
  <script src="./js/base.js"></script>
 </body>
 </html>
