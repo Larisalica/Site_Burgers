@@ -90,3 +90,12 @@ width: rem(60);
 height:rem(83);
 top:100%;
 }
+
+
+.owl-prev {
+position:absolute;
+top:50%;
+}
+.owl-prev:hover, .owl-next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
