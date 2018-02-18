@@ -1,10 +1,13 @@
 .order__name
 {
-    font-size: 71.71px;
+    font-size: rem(72);
     font-family: "Gagalin";
     color: $yellow;
     line-height: 0.889;
     text-align: center;
+    @include phone {
+        font-size: rem(50);
+    }
 }
       
 
@@ -23,6 +26,9 @@
 {
     display:flex;
     color:white;
+    @include phone {
+        flex-direction:column;
+    }
  
 }
 .form__block
@@ -69,14 +75,22 @@
 .form__textarea
 {
     width:100%;
+    height: rem(100);
     padding: 10px 20px;
     background: #fff;
     border-width: 1px;
+    resize: none;
 }
 .form__radio
 {
     display:flex;
-    margin-bottom:25px;
+    margin-bottom:rem(25);
+ 
+    @include phone {
+        max-width:rem(295);
+        margin:0 auto;
+        margin-bottom: rem(30);
+    }
 }
 .form__btn
 {
@@ -86,13 +100,15 @@
 .form__checkbox
 {
     margin-bottom:20px;
+    @include phone {
+       text-align: center;
+    }
+}
+.block__button{
+    text-align: center;
 }
 
 
-li{
-    margin: 10px 0;
-    list-style: none;
-}
 fieldset{
     border: 1px solid #ccc;
     margin-bottom: 20px;

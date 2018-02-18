@@ -1,3 +1,9 @@
+
+$(".wrapper").onepage_scroll();
+
+
+
+
 var hamburger = document.getElementById("hamburger__link");
 console.log (hamburger);
 hamburger.addEventListener ("click", function(e){
@@ -34,14 +40,6 @@ for (var i=0;i<team_name.length;i++){
 }
 
 
-
-
-
-$(document).ready(function() {
-	$('#pagepiling').pagepiling({  
-        items:1
-});
-});
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({

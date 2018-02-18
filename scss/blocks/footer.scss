@@ -11,6 +11,10 @@
 {
     display:flex;
     justify-content: space-between;
+    @include phone {
+      flex-direction: column;
+      text-align: center;
+    }
 }
 
 .footer__desc-adress

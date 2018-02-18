@@ -91,13 +91,13 @@ color:#ffffff;
 
     @include phone {
         display:inline-block;
-        width: 24px;
+        width: rem(24);
         margin-right: rem(15);
         margin-left: rem(15);
     }
     @include tablet {
         display:inline-block;
-        width: 24px;
+        width: rem(24);
         margin-right: rem(15);
         margin-left: rem(15);
     }
@@ -109,20 +109,20 @@ color:#ffffff;
         span:nth-child(2)
         {
             position:absolute;
-            top:18px;
+            top:rem(18);
             opacity:0;
         }
         span:nth-child(1)
         {
         position: absolute;
-        top:18px;
+        top:rem(18);
         transform: rotate(135deg);
         }
 
         span:nth-child(3)
         {
         position: absolute;
-        top:18px;
+        top:rem(18);
         transform: rotate(-135deg);
         }
     }
@@ -130,19 +130,19 @@ color:#ffffff;
         span:nth-child(2)
         {
             position: absolute;
-            top:0px;
+            top:rem(0);
             opacity:0;
         }
         span:nth-child(1)
         {
         position: absolute;
-        top:18px;
+        top:rem(18);
         transform: rotate(135deg);
         }
         span:nth-child(3)
         {
         position: absolute;
-        top:18px;
+        top:rem(18);
         transform: rotate(-135deg);
         }
     }

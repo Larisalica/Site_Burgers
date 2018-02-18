@@ -38,6 +38,9 @@ a
     @include phone {
       flex-direction:column;
     }
+    @include tablet {
+        flex-direction:column;
+      }
 }
 .content__column
 {
@@ -45,6 +48,9 @@ a
     @include phone {
         text-align: center;
         }
+        @include tablet {
+            text-align: center;
+            }
 }
 
 
@@ -58,6 +64,12 @@ a
 
     @include phone {
     margin-bottom: rem(50);
+    width:80%;
+    margin: 0 auto;
+    align-items: center;
+}
+    @include tablet {
+    margin-bottom: rem(50);
 }
 }
 .content__text
@@ -70,19 +82,29 @@ a
     font-family: gagalinregular;
     font-size: rem(72);
     color:#f9b43b;
-        @include phone {
+        @include phone {  
         display:block;
         font-size: rem(63);
+
+    }
+    @include tablet {
+        display:block;
+        font-size: rem(72);
     }
 }
 .content__text-line2
 {
     font-family: lifehackmedium;
-    font-size: 65px;
+    font-size: rem(65);
     color:#ffffff;
     @include phone {
     display:block;
+    font-size: rem(54);
     }
+    @include tablet {
+        display:block;
+        font-size: rem(65);
+        }
 }
 
 
@@ -92,10 +114,13 @@ a
 {
     display:flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: rem(90);
     @include phone {
-        margin-top: 67px;
+        margin-top: rem(57);
         }
+        @include tablet {
+            margin-top: rem(67);
+            }
 
 
 }

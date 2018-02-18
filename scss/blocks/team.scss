@@ -70,6 +70,10 @@
 height:0;
 display:flex;
 overflow:hidden;
+@include phone {
+    align-items: center;
+     }
+
 }
 
 
@@ -100,6 +104,10 @@ overflow:hidden;
 
 .team__accordeon-photo
 {
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
     margin-right:20px;
     margin-bottom:40px;
     @include phone {
@@ -110,10 +118,10 @@ overflow:hidden;
 
 .team__accordeon-ava
 {
-border-radius: 50%;
-width:100px;
-height: 100px;
-overflow: hidden;
+width:100%;
+height: 100%;
+
+
 }
 .team__accordeon-title
 {
@@ -132,7 +140,10 @@ overflow: hidden;
     font-size:14px;
     line-height: 24px;
     color:#ffffff;
+    max-width:rem(205);
     @include phone {
-        margin-bottom:30px;
+        margin-bottom:rem(30);
+        max-width:rem(360);
+        margin:0 auto;
         }
 }
