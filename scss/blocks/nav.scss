@@ -24,6 +24,7 @@
     flex-direction: column;
 }
 
+
 .nav-list
 {
     @include phone {
@@ -39,6 +40,11 @@
 .nav__item
 {
 display: inline-flex;
+@include phone {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 li:last-child:after
 {
@@ -52,6 +58,9 @@ content:"";
     font-size: rem(13);
     color:#ffffff;
     text-transform: uppercase;
+    @include phone {
+      margin-bottom:rem(20);
+    }
 }
 .nav__item::after
 {  
@@ -61,13 +70,13 @@ content: "●";
 padding-right: rem(15);
 padding-left: rem(15);
     @include phone {
-    content: "";
+    margin-bottom:rem(20);
 }
 
 @include tablet {
     display:flex;
     flex-direction: column;
-    content: "";
+    
 }
 }
 
@@ -82,6 +91,7 @@ text-transform: uppercase;
 font-family: 'ubuntumedium';
 font-size: rem(13);
 color:#ffffff;
+display:inline-flex;
 }
 
 .hamburger

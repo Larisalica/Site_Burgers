@@ -1,13 +1,3 @@
-.pagination
-{
-display:block;
-@include phone {
-    display:none;
-}
-@include tablet {
-    display:none;
-}
-}
 
 .pagination_active
 {
@@ -23,7 +13,7 @@ display:block;
 
 }
 
-.pagination__item:before
+.onepage-pagination li a:before
 {
     width:6px;
     height:6px;
@@ -35,16 +25,32 @@ display:block;
     left:50%;
     transform:translate(-50%, -50%);
     display:block;
-
 }
-.pagination-list
+
+.onepage-pagination li a.active:before
+{
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: 1px solid white;
+    margin-top: 0px;
+    left: 10px;
+}
+.onepage-pagination
 {
     top:90px;
     right:50px;
     position:fixed;
     display:block;
+  
+    @include phone {
+        display:none;
+    }
+    @include tablet {
+        display:none;
+    }
 }
-.pagination__item
+.onepage-pagination li a
 {
     display:block;
     width:15px;

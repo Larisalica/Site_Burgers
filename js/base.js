@@ -1,9 +1,14 @@
 
 $(".wrapper").onepage_scroll();
 
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items:1, nav:true, navText: ["",""]
+  });
+});
 
 
-
+                    //  Открыть гамбургер
 var hamburger = document.getElementById("hamburger__link");
 console.log (hamburger);
 hamburger.addEventListener ("click", function(e){
@@ -12,40 +17,34 @@ e.preventDefault();
 
 var nav = document.getElementById("nav");
   console.log(nav);
-nav.classList.add("nav-active");
+nav.classList.toggle("nav-active");
 
 var hamburger = document.getElementById("hamburger");
 console.log(hamburger);
-hamburger.classList.add("hamburger-active");
+hamburger.classList.toggle("hamburger-active");
 });
 
 
 
 
 
-var team_name = document.getElementsByClassName("team__accordeon-name");
-console.log (team_name);
- var team_content = document.getElementsByClassName("team__accordeon-content");
-console.log (team_content);
 
-for (var i=0;i<team_name.length;i++){
-  team_name[i].addEventListener('click',function() {
-    if (!(this.classList.contains('team__active'))){
-      for(var i=0;i<team_name.length;i++){
-        team_name[i].classList.remove('team__active');
-      }
-      this.classList.add('team__active');
-    }
+
+
+
+
+
+$(".team__accordeon-name").on("click", function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass("team__active");
 })
-}
 
 
+$(".menu__accordeon-wrap").on("click",function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass("menu__active");
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    items:1, nav:true
-  });
-});
+})
 
 
 

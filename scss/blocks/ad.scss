@@ -12,19 +12,23 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
     top:50%;
     display:flex;
     transform: translate(-50%, -50%);
-        @include phone {
-        flex-direction:column;
-      }
+     
 }
 .ad__content
 {
     display:flex;
     position: relative;
-  
+    @include phone {
+        flex-direction:column;
+        margin-top:rem(140);
+      }
 }
 .adcontent__column
 {
     flex:1;
+    @include phone {
+       text-align: center;
+      }
 }
 
 
@@ -38,6 +42,8 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
 
     @include phone {
     margin-bottom: rem(40);
+    height: 50%;
+    width:80%;
 }
 }
 
@@ -48,6 +54,11 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
     line-height: rem(64);
     color:white;
     margin-bottom: rem(46);
+    @include phone {
+        font-size:rem(50);
+        margin-bottom: rem(30);
+
+       }
 
 }
 
@@ -65,6 +76,9 @@ margin-bottom: rem(30);
     font-size:rem(72);
     color: $orange;
     margin-right: rem(10);
+    @include phone {
+        font-size:rem(50);
+       }
 }
 .ad__prices2
 {
@@ -72,6 +86,9 @@ margin-bottom: rem(30);
     font-size:rem(30);
     color: $orange;
     margin-right: rem(30);
+    @include phone {
+        font-size:rem(24);
+       }
 }
 
 .ad__img1
@@ -80,6 +97,12 @@ position:absolute;
 width:rem(88);
 height:rem(88);
 bottom:100%;
+@include phone {
+    top:0;
+    left:0;
+   margin-top:-90px;
+   }
+
 }
 
 
@@ -89,27 +112,30 @@ position:absolute;
 width: rem(60);
 height:rem(83);
 top:100%;
+@include phone {
+    top:0;
+    right:0;
+    margin-top:-90px;
+   }
+
+
 }
 
 
 .owl-prev {
 position:absolute;
 top:50%;
+right: 100%;
 transform: translateY(-50%);
-width: 0px;
-height: 0px;
+width: 18px;
+height: 18px;
+border-left: 3px solid #fff;
+border-top: 3px solid #fff;
+border-radius: 3px;
+transform: rotate(-45deg);
 
 }
-.owl-prev::before
-{
-    content:'';
-    width: 0px;
-    height: 0px;
-    border: 30px solid transparent;
-    border-top-color: white;
-    display: inline-block;
-   transform: translate(-30px, -50px);
-}
+
 .owl-prev:hover, .owl-next:hover{
     background-color: rgba(0,0,0,0.8);
 }
@@ -120,4 +146,10 @@ height: 0px;
     left:100%;
     top:50%;
     transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    border-radius: 3px;
+    transform: rotate(135deg);
 }

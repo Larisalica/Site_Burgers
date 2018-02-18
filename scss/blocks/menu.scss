@@ -94,12 +94,13 @@ z-index: 10;
     overflow:hidden;  
     display:flex;
 }
-.menu__accordeon-item--active
+.menu__active
 {
     .menu__accordeon-description
     {
        width: rem(476);
        padding: rem(60) rem(46);
+       transition: all 1s linear
       
     }
 }

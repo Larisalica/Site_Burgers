@@ -43,6 +43,7 @@
     .team__accordeon-content
     {
     height: auto;
+    transition: all 1s linear;
 
     @include phone {
        display:flex;
