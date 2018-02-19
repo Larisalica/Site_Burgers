@@ -20,11 +20,12 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
     position: relative;
     @include phone {
         flex-direction:column;
-        margin-top:rem(140);
+        margin-top:rem(130);
       }
       @include tablet {
         flex-direction:column;
         margin-top:rem(110);
+        align-items: center;
       }
 }
 .adcontent__column
@@ -39,13 +40,19 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
 }
 
 .burger_cont
-{
+{   height: 320px;
+    width:450px;
+
+    @include phone {
+        margin-bottom: rem(25);
+        height: 250px;
+        width:350px;
+    }
     @include tablet {
-        margin-bottom: rem(40);
-        height: 330px;
+        margin-bottom: rem(25);
+        height: 320px;
         width:430px;
     }
-   
 }
 
 .adburger__image
@@ -57,13 +64,13 @@ background: linear-gradient(to top, $yellow 0%, #eb8c38 50%, $yellow 100%);
 
     @include phone {
     margin-bottom: rem(40);
-    height: 50%;
-    width:80%;
+    height: 100%;
+    width:100%;
 }
 @include tablet {
     margin-bottom: rem(40);
-    height: 50%;
-    width:50%;
+    height: 100%;
+    width:100%;
 }
 
 }
@@ -115,16 +122,18 @@ margin-bottom: rem(30);
 position:absolute; 
 width:rem(88);
 height:rem(88);
-bottom:100%;
+top:0;
+left:0;
+z-index: 999;
 @include phone {
     top:0;
-    left:0;
+    left:-100px;
    margin-top:-90px;
    }
    @include tablet {
-    top:0;
-    left:0;
-   margin-top:-90px;
+    
+    left: 120px;
+    top: -115px;;
    }
 }
 
@@ -134,16 +143,18 @@ bottom:100%;
 position:absolute;
 width: rem(60);
 height:rem(83);
-top:100%;
+bottom:0;
+left:0;
+z-index: 999;
 @include phone {
     top:0;
     right:0;
     margin-top:-90px;
    }
    @include tablet {
-    top:0;
-    right:0;
-    margin-top:-90px;
+    right: 120px;
+    top: -115px;
+   
    }
 
 }
@@ -160,6 +171,11 @@ border-left: 3px solid #fff;
 border-top: 3px solid #fff;
 border-radius: 3px;
 transform: rotate(-45deg);
+@include phone {
+    
+    left: -5px;
+    position: absolute;
+   }
 
 }
 
@@ -179,4 +195,9 @@ transform: rotate(-45deg);
     border-top: 3px solid #fff;
     border-radius: 3px;
     transform: rotate(135deg);
+    @include phone {
+    
+        
+        right: 5px;
+       }
 }

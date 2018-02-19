@@ -43,7 +43,7 @@
     .team__accordeon-content
     {
     height: auto;
-    transition: all 1s linear;
+   
 
     @include phone {
        display:flex;
@@ -101,6 +101,12 @@ overflow:hidden;
         border-bottom-width:0;
         border-top-color: $yellow;
     }
+
+    &:hover
+    {
+        
+        transition: all 1s linear;
+    }
 }
 
 .team__accordeon-photo
@@ -121,9 +127,10 @@ overflow:hidden;
 {
 width:100%;
 height: 100%;
-
-
 }
+
+
+
 .team__accordeon-title
 {
     font-family: 'ubuntubold';

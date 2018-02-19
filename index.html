@@ -5,7 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Burger</title>
-   
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [59.92954648458454,30.323774105956982], /* указываем долготу и ширину центра карты */
+                    zoom: 9
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Собственный значок метки',
+                    balloonContent: 'Это красивая метка'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'images/myIcon.gif',
+                    // Размеры метки.
+                    iconImageSize: [30, 42],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                });
+
+            myMap.geoObjects
+                .add(myPlacemark); /* добавляем метку на карту */
+        });
+    </script>
+    
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/onepage-scroll/onepage_scroll.css">
     <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
@@ -123,8 +156,10 @@
 
     <div class="ad__content">
             <div class="adcontent__column">
+                    <div class="burger_cont">
                  <img src="img/ad/Burger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
-            </div>
+                    </div>
+                </div>
             <div class="adcontent__column ">
                 <div class="adcontent__text">
                     <h1 class="ad__title">Dark Beef Burger</h1>
@@ -147,7 +182,9 @@
 
     <div class="ad__content">
             <div class="adcontent__column">
+                    <div class="burger_cont">
                 <img src="img/ad/Cheeseburger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                    </div>
             </div>
             <div class="adcontent__column ">
                 <div class="adcontent__text">
@@ -171,7 +208,9 @@
   
     <div class="ad__content">
             <div class="adcontent__column">
+                    <div class="burger_cont">
                 <img src="img/ad/chiken burger.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                    </div>
             </div>
             <div class="adcontent__column ">
                 <div class="adcontent__text">
@@ -195,7 +234,9 @@
 
     <div class="ad__content">
         <div class="adcontent__column">
+                <div class="burger_cont">
             <img src="img/ad/burger_sandwich.png" alt="На этом месте должен был быть сочный бургер" class="adburger__image">
+                </div>
         </div>
                 <div class="adcontent__column ">
                     <div class="adcontent__text">
@@ -290,7 +331,7 @@
     <section class="section menu">
         <h1 class="menu__name">Меню</h1>
             <ul class="menu__accordeon">
-                <li class="menu__accordeon-item menu__accordeon-item--active">
+                <li class="menu__accordeon-item">
                     <a href="#" class="menu__accordeon-wrap menu__accordeon-meat"><h3 class="menu__accordeon-name">Для мясоедов</h3></a>
                     <div class="menu__accordeon-description">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -469,31 +510,30 @@
 </section>
 
                                             <!-- СЕКЦИЯ "КАРТА" -->
-<section class="section map">
-    <!-- <div class="map__container"></div> -->
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1df620f35cef630e66a09c8e0f335d7cf7c1a60b4f4b5fdcd2a8fbf22ffd2acf&amp;width=100%25&amp;height=596&amp;lang=ru_RU&amp;scroll=true"></script>
+<section class="section">
+    <div class="map" id="map"></div>
     <footer class="footer">
-        <div class="container footer__container">
-            <div class="footer__desc">
-                <span class="footer__desc-adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
-                <a href="tel:+78123771377" class="footer__desc-number"><img src="img/icons/phone.svg" class="footer__phone">+7 (812) 377-13-77</a>
+            <div class="container footer__container">
+                <div class="footer__desc">
+                    <span class="footer__desc-adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
+                    <a href="tel:+78123771377" class="footer__desc-number"><img src="img/icons/phone.svg" class="footer__phone">+7 (812) 377-13-77</a>
+                </div>
+                <div class="footer__social">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                    </svg>
+                    <svg class="icon icon-active">
+                            <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                    </svg>
+                    <svg class="icon">
+                            <use xlink:href="img/sprite/sprite.svg#inst"></use>
+                    </svg>
+                    <svg class="icon">
+                            <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+                    </svg>          
+                </div>
             </div>
-            <div class="footer__social">
-                <svg class="icon">
-                    <use xlink:href="img/sprite/sprite.svg#vk"></use>
-                </svg>
-                <svg class="icon icon-active">
-                        <use xlink:href="img/sprite/sprite.svg#fb"></use>
-                </svg>
-                <svg class="icon">
-                        <use xlink:href="img/sprite/sprite.svg#inst"></use>
-                </svg>
-                <svg class="icon">
-                        <use xlink:href="img/sprite/sprite.svg#twitter"></use>
-                </svg>          
-            </div>
-        </div>
-        </footer>
+            </footer>
 </section>   
 </div>  
 

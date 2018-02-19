@@ -45,6 +45,11 @@ display: inline-flex;
     flex-direction: column;
     align-items: center;
 }
+@include tablet {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 li:last-child:after
 {
@@ -61,6 +66,9 @@ content:"";
     @include phone {
       margin-bottom:rem(20);
     }
+    @include tablet {
+        margin-bottom:rem(20);
+      }
 }
 .nav__item::after
 {  
@@ -74,8 +82,7 @@ padding-left: rem(15);
 }
 
 @include tablet {
-    display:flex;
-    flex-direction: column;
+    margin-bottom:rem(20);
     
 }
 }

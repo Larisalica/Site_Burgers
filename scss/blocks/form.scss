@@ -31,6 +31,8 @@
     }
     @include tablet {
         flex-direction:column;
+        width: 70%;
+        margin: 0 auto;
     }
 }
 .form__block
@@ -95,8 +97,7 @@
     }
     @include tablet {
         max-width:rem(295);
-        margin:0 auto;
-        margin-bottom: rem(30);
+        margin-bottom: rem(25);
     }
 }
 .form__btn
@@ -111,8 +112,13 @@
        text-align: center;
     }
 }
-.block__button{
-    text-align: center;
+.block__button {
+    @include phone {
+        text-align: center;
+     }
+     @include tablet {
+        text-align: left;
+     }
 }
 
 

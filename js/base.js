@@ -24,33 +24,55 @@ console.log(hamburger);
 hamburger.classList.toggle("hamburger-active");
 });
 
+// команда аккордеон
 
-
-
-
-
-
-
-
-
+// $(".team__accordeon-name").on("click", function(e){
+//     e.preventDefault();
+//     $(this).parent().toggleClass("team__active");
+  
+// }
+// )
 
 $(".team__accordeon-name").on("click", function(e){
-    e.preventDefault();
-    $(this).parent().toggleClass("team__active");
-  
-}
+	e.preventDefault();
+  var allItems = $(".team__accordeon-item");
+  for(var i=0;i<allItems.length;i++){
+    if($(allItems[i]).hasClass("team__active")==false){
+    	$(this).parent().addClass("team__active");
+    }else{
+        $(allItems[i]).removeClass("team__active");
+        $(this).parent().toggleClass("team__active");
+    }
+  }
+});
 
-)
-// else {
-//     $(".team__accordeon-name").removeClass("team__active") 
-// }
 
 
-$(".menu__accordeon-wrap").on("click",function(e){
-    e.preventDefault();
-    $(this).parent().toggleClass("menu__active");
 
-})
+
+
+ // меню аккордеон
+
+ $(".menu__accordeon-wrap").on("click", function(e){
+	e.preventDefault();
+  var allItems = $(".menu__accordeon-item");
+  for(var i=0;i<allItems.length;i++){
+    if($(allItems[i]).hasClass("menu__active")==false){
+    	$(this).parent().addClass("menu__active");
+    }else{
+        $(allItems[i]).removeClass("menu__active");
+        $(this).parent().toggleClass("menu__active");
+    }
+  }
+});
+
+
+
+// $(".menu__accordeon-wrap").on("click",function(e){
+//     e.preventDefault();
+//     $(this).parent().toggleClass("menu__active");
+
+// })
 
 
 

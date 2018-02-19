@@ -21,11 +21,11 @@ $mail_message = '
 </body>
 </html>';
 
-$headers = "From: Администратор сайта <admin@loftschool.com>\r\n".
+$headers = "From: Администратор сайта <a>\r\n".
             "MIME-Version: 1.0" . "\r\n" .
             "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-$mail = mail('koval@loftschool.com', 'Заказ', $mail_message, $headers);
+$mail = mail('', 'Заказ', $mail_message, $headers);
 
 $data = [];
 

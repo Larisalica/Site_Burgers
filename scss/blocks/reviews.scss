@@ -16,9 +16,11 @@ position:relative;
 @include phone {
     width:50%;
     height: 25%;
-
-  
     }
+    @include tablet {
+        width:50%;
+        height: 25%;
+        }
 }
 
 
@@ -47,6 +49,15 @@ height: 100%;
     position:absolute;
     top:50px;
     left:20px;
+
+    @include tablet {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        text-align: center;
+        }
+    
 }
 .reviews__sub
 {
@@ -59,7 +70,10 @@ height: 100%;
             font-size: 24px;
             line-height: 28px;
     }
-   
+    @include tablet {
+        text-align:center;
+        margin-bottom:20px;
+         }
 
 }
 .reviews__link-phone, .reviews__link-dekstop
