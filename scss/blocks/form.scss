@@ -29,7 +29,9 @@
     @include phone {
         flex-direction:column;
     }
- 
+    @include tablet {
+        flex-direction:column;
+    }
 }
 .form__block
 {
@@ -87,6 +89,11 @@
     margin-bottom:rem(25);
  
     @include phone {
+        max-width:rem(295);
+        margin:0 auto;
+        margin-bottom: rem(30);
+    }
+    @include tablet {
         max-width:rem(295);
         margin:0 auto;
         margin-bottom: rem(30);

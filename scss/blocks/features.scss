@@ -15,16 +15,17 @@
     padding:0;
     margin: 0 auto;
     display: flex;
-    width:960px;
     box-sizing: border-box;
     align-items: center;
 
         @include phone {
             flex-direction: column; 
             width:auto;
-
         }
-   
+        @include tablet {
+           
+    
+        }
 }
 .features__name
 {
@@ -61,7 +62,6 @@
     margin-bottom: 30px;
     @include phone {
         margin-right: rem(24);
-       
         }
    
 }
@@ -69,18 +69,19 @@
 .feature__subtext
 {
     font-family: 'lifehackmedium';
-    font-size:24.12px;
+    font-size:rem(24);
     color:#2f3234;
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
    
 
 }
 .feature__text
 {
     font-family:'ubuntulight';
-    font-size:14.01px;
+    font-size:rem(14);
     color:#2f3234;
     opacity: 0.8;
-    line-height: 24.04px;
+    line-height: rem(24);
+  
  
 }

@@ -37,7 +37,13 @@ hamburger.classList.toggle("hamburger-active");
 $(".team__accordeon-name").on("click", function(e){
     e.preventDefault();
     $(this).parent().toggleClass("team__active");
-})
+  
+}
+
+)
+// else {
+//     $(".team__accordeon-name").removeClass("team__active") 
+// }
 
 
 $(".menu__accordeon-wrap").on("click",function(e){
